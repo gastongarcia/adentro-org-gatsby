@@ -62,7 +62,7 @@ function IndexPage() {
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mt-3"
                 id="email"
                 name="email"
-                type="text"
+                type="email"
                 placeholder="Tu email"
               />
               </label>
