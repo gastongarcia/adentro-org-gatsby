@@ -33,14 +33,20 @@ function IndexPage() {
             data-netlify="true"
             method="POST"
             action="/enviado"
+            netlify-honeypot="no-bots-gracias"
           >
             <div class="mb-4">
+              <label class="hidden" for="no-bots-gracias">
+                A los bots
+                <input type="text" name="no-bots-gracias"/>
+              </label>
+
               <label
                 class="block text-grey-darker text-sm font-bold mb-2"
                 for="nombre"
               >Nombre Completo:
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mt-3"
                 id="nombre"
                 name="nombre"
                 type="text"
@@ -53,7 +59,7 @@ function IndexPage() {
             <div class="mb-4">
               <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Email:
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mt-3"
                 id="email"
                 name="email"
                 type="text"
@@ -66,7 +72,7 @@ function IndexPage() {
             <div class="mb-4">
               <label class="block text-grey-darker text-sm font-bold mb-2" for="telefono">Teléfono:
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mt-3"
                 id="telefono"
                 name="telefono"
                 type="text"
@@ -80,7 +86,7 @@ function IndexPage() {
               <label class="block text-grey-darker text-sm font-bold mb-2" for="mensaje">Mensaje:
               
               <textarea
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline h-24"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline h-24 mt-3"
                 id="mensaje"
                 name="mensaje"
               ></textarea>
