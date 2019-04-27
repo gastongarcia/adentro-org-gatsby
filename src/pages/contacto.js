@@ -32,6 +32,7 @@ function IndexPage() {
             name="contact"
             data-netlify="true"
             method="POST"
+            action="/enviado"
           >
             <div class="mb-4">
               <label

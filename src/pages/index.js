@@ -42,8 +42,7 @@ function IndexPage() {
 
           <p>Al cultivar la práctica del Mindfulness, la ciencia y la experiencia demuestran beneficios en la salud, relaciones, trabajo y felicidad.</p>
           <p>
-            Si quiere aprender a meditar con nosotros haga
-             <StyledLink to="/contacto/" class="underline"> clic aquí</StyledLink>.
+            Si quiere aprender a meditar con nosotros haga <StyledLink to="/contacto/" class="underline">clic aquí</StyledLink>.
           </p>
         </div>
       </section>
