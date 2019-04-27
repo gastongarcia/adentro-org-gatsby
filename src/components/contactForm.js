@@ -14,10 +14,14 @@ function ContactForm(){
             action="/enviado"
             netlify-honeypot="no-bots-gracias"
           >
+
             <div class="mb-4">
+
+            <input type="hidden" name="contact" value="contact" />
+
               <label class="hidden" for="no-bots-gracias">
                 A los bots
-                <input type="text" name="no-bots-gracias"/>
+                <input type="text" name="no-bots-gracias" id="no-bots-gracias"/>
               </label>
 
               <label
