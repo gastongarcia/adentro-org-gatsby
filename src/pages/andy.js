@@ -11,6 +11,9 @@ const StyledLink = styled(Link)`
   &:hover{
     color: #212529;
   }
+  &:visited{
+    color: #212529;
+  }
 `
 
 
