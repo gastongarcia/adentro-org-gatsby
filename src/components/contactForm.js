@@ -8,7 +8,7 @@ function ContactForm(){
         
         <form
             class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-            name="contact"
+            name="contact-form"
             data-netlify="true"
             method="POST"
             action="/enviado"
@@ -17,7 +17,7 @@ function ContactForm(){
 
             <div class="mb-4">
 
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact-form" />
 
               <label class="hidden" for="no-bots-gracias">
                 A los bots
