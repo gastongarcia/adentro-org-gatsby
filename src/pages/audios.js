@@ -37,40 +37,40 @@ function IndexPage() {
 
           <ul class="mb-5">
             <li class="mb-4">
-              Audio 1 - 5 Minutos <a
+              Audio 1 - 5 Minutos <StyledLink
                 href="/audio/01_adentro_5_minutos.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 3 Mb</a>
+              >Descargar - 3 Mb</StyledLink>
             </li>
             <li class="mb-4">
-              Audio 2 - Atención a la respiración <a
+              Audio 2 - Atención a la respiración <StyledLink
                 href="/audio/02_adentro_atencion_a_la_respiración.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 2 Mb</a>
+              >Descargar - 2 Mb</StyledLink>
             </li>
             <li class="mb-4">
-              Audio 3 - Escaneo corporal <a
+              Audio 3 - Escaneo corporal <StyledLink
                 href="/audio/03_adentro_escaneo_corporal.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 19 Mb</a>
+              >Descargar - 19 Mb</StyledLink>
             </li>
             <li class="mb-4">
-              Audio 4 - Grounding <a
+              Audio 4 - Grounding <StyledLink
                 href="/audio/05_adentro_grounding.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 4 Mb</a>
+              >Descargar - 4 Mb</StyledLink>
             </li>
             <li class="mb-4">
-              Audio 5 - Bondad Amorosa <a
+              Audio 5 - Bondad Amorosa <StyledLink
                 href="/audio/07_adentro_bondad_amorosa.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 9 Mb</a>
+              >Descargar - 9 Mb</StyledLink>
             </li>
             <li class="mb-4">
-              Audio 6 - Movimiento <a
+              Audio 6 - Movimiento <StyledLink
                 href="/audio/08_adentro_movimiento.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 10 Mb</a>
+              >Descargar - 10 Mb</StyledLink>
             </li>
           </ul>
         </div>
