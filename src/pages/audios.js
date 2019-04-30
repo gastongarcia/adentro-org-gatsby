@@ -6,7 +6,7 @@ import Header from "../components/header"
 import DeepWater from "../images/ryan-loughlin-765211-unsplash.jpg"
 import styled from "styled-components"
 
-const StyledLink = styled(Link)`
+const a = styled(Link)`
   color: #4a5568;
   &:hover{
     color: #212529;
@@ -37,40 +37,40 @@ function IndexPage() {
 
           <ul class="mb-5">
             <li class="mb-4">
-              Audio 1 - 5 Minutos <StyledLink
+              Audio 1 - 5 Minutos <a
                 href="/audio/01_adentro_5_minutos.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 3 Mb</StyledLink>
+              >Descargar - 3 Mb</a>
             </li>
             <li class="mb-4">
-              Audio 2 - Atención a la respiración <StyledLink
+              Audio 2 - Atención a la respiración <a
                 href="/audio/02_adentro_atencion_a_la_respiración.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 2 Mb</StyledLink>
+              >Descargar - 2 Mb</a>
             </li>
             <li class="mb-4">
-              Audio 3 - Escaneo corporal <StyledLink
+              Audio 3 - Escaneo corporal <a
                 href="/audio/03_adentro_escaneo_corporal.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 19 Mb</StyledLink>
+              >Descargar - 19 Mb</a>
             </li>
             <li class="mb-4">
-              Audio 4 - Grounding <StyledLink
+              Audio 4 - Grounding <a
                 href="/audio/05_adentro_grounding.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 4 Mb</StyledLink>
+              >Descargar - 4 Mb</a>
             </li>
             <li class="mb-4">
-              Audio 5 - Bondad Amorosa <StyledLink
+              Audio 5 - Bondad Amorosa <a
                 href="/audio/07_adentro_bondad_amorosa.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 9 Mb</StyledLink>
+              >Descargar - 9 Mb</a>
             </li>
             <li class="mb-4">
-              Audio 6 - Movimiento <StyledLink
+              Audio 6 - Movimiento <a
                 href="/audio/08_adentro_movimiento.m4a"
                 class="rounded text-center lg:w-1/4 w-1/2"
-              >Descargar - 10 Mb</StyledLink>
+              >Descargar - 10 Mb</a>
             </li>
           </ul>
         </div>
