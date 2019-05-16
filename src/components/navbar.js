@@ -1,9 +1,19 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
+import {TiSocialFacebook,TiSocialInstagram} from "react-icons/ti"
 
 const StyledLink = styled.a`
   color: #4a5568;
+  &:hover{
+    color: #212529;
+  }
+`
+
+const StyledIcon = styled.a`
+  color: #4a5568;
+  font-size:20px;
+  margin-left:6px;
   &:hover{
     color: #212529;
   }
@@ -48,6 +58,16 @@ function Navbar({}) {
               href="/contacto/"
               className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
             >Contacto</StyledLink>
+            <StyledIcon
+              href="https://www.instagram.com/adentro.mindfulness/"
+              target="_blank"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
+            ><TiSocialInstagram/></StyledIcon>
+            <StyledIcon
+              href="https://www.facebook.com/adentro.mindfulness/"
+              target="_blank"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
+            ><TiSocialFacebook/></StyledIcon  >
           </div>
         </div>
       </nav>
