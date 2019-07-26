@@ -2,13 +2,8 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import {TiSocialFacebook,TiSocialInstagram} from "react-icons/ti"
+import { css } from "@emotion/core"
 
-const StyledLink = styled.a`
-  color: #4a5568;
-  &:hover{
-    color: #212529;
-  }
-`
 
 const StyledIcon = styled.a`
   color: #4a5568;
@@ -46,27 +41,27 @@ function Navbar({}) {
           } w-full flex-grow sm:flex sm:items-center sm:w-auto`}
         >
           <div className="text-sm sm:flex mx-auto">
-            <StyledLink
-              href="/"
-              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white mr-4"
-            >Inicio</StyledLink>
-            <StyledLink
-              href="/andy/"
-              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white mr-4"
-            >Msc. Andrea Carranza E.</StyledLink>
-            <StyledLink
-              href="/contacto/"
-              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
-            >Contacto</StyledLink>
+            <Link
+              to="/"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker mr-4 menuitem"
+            >Inicio</Link>
+            <Link
+              to="/andy/"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline mr-4 menuitem"
+            >Msc. Andrea Carranza E.</Link>
+            <Link
+              to="/contacto/"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline menuitem"
+            >Contacto</Link>
             <StyledIcon
               href="https://www.instagram.com/adentro.mindfulness/"
               target="_blank"
-              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline"
             ><TiSocialInstagram/></StyledIcon>
             <StyledIcon
               href="https://www.facebook.com/adentro.mindfulness/"
               target="_blank"
-              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
+              className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline"
             ><TiSocialFacebook/></StyledIcon  >
           </div>
         </div>

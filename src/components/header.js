@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import AdentroLogo from "../images/logo.svg"
 
 
@@ -20,8 +20,8 @@ function Header({PageTitle}) {
   );
 }
 
-Header.PropTypes = {
-  PageTitle: PropTypes.string.isRequired
+Header.propTypes = {
+  PageTitle: propTypes.string.isRequired
 }
 
 export default Header;
