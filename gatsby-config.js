@@ -6,6 +6,23 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`,
+        preview: false,
+        disableLiveReload: false,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-120118656-6",

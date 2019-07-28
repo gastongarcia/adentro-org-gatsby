@@ -20,8 +20,8 @@ function Layout({ children }) {
       `}
 
       render={data => (
-        
-        <div className>
+
+        <>
           <Navbar />
 
           <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
@@ -29,7 +29,7 @@ function Layout({ children }) {
           </div>
 
           <Footer />
-        </div>
+        </>
       )}
     />
   );

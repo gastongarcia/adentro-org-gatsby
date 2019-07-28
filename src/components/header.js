@@ -4,7 +4,6 @@ import propTypes from "prop-types";
 import AdentroLogo from "../images/logo.svg"
 
 
-
 function Header({PageTitle}) {
 
   return (
