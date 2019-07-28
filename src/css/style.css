@@ -68,6 +68,6 @@
 section a{
   color:#4a5568;
 }
-h3{
+h3, section h3{
   color: #4a5568;
 }
