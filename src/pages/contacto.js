@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Header from "../components/header"
 import ContactForm from "../components/contactForm"
-import DeepWater from "../images/ryan-loughlin-765211-unsplash.jpg"
 import styled from "styled-components"
 
 const StyledLink = styled(Link)`
@@ -15,20 +14,27 @@ const StyledLink = styled(Link)`
 `
 
 
-function IndexPage() {
+const ContactPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Inicio"
+        title="Contacto"
         keywords={[`adentro`, `mindfulness`, `Andrea Carranza`, `Costa Rica`]}
       />
 
-      <Header PageTitle="Contacto" />
-      
+      <Header PageTitle={data.datoCmsContacto.tituloDeLaPagina} />
+
       <ContactForm />
-      
+
     </Layout>
   );
 }
 
-export default IndexPage;
+export const query = graphql`
+query Contacto {
+  datoCmsContacto {
+    tituloDeLaPagina
+  }
+}`
+
+export default ContactPage
