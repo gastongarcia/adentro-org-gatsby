@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Header from "../components/header"
 import ContactForm from "../components/contactForm"
 import styled from "styled-components"
+import Navbar from "../components/navbar"
 
 const StyledLink = styled(Link)`
   color: #4a5568;
@@ -21,6 +22,8 @@ const ContactPage = ({ data }) => {
         title="Contacto"
         keywords={[`adentro`, `mindfulness`, `Andrea Carranza`, `Costa Rica`]}
       />
+
+      <Navbar />
 
       <Header PageTitle={data.datoCmsContacto.tituloDeLaPagina} />
 

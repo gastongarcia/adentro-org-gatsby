@@ -22,10 +22,12 @@ function Layout({ children }) {
       render={data => (
 
         <>
-          <Navbar />
+
 
           <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
+
             {children}
+
           </div>
 
           <Footer />

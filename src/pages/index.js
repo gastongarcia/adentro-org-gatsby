@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Header from "../components/header"
 import styled from "styled-components"
+import Navbar from "../components/navbar"
 
 const StyledLink = styled(Link)`
   color: #4a5568;
@@ -19,10 +20,13 @@ const StyledLink = styled(Link)`
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+
       <SEO
         title="Inicio"
         keywords={[`adentro`, `mindfulness`, `Andrea Carranza`, `Costa Rica`]}
       />
+
+      <Navbar />
 
       <Header PageTitle={data.datoCmsInicio.tituloDeLaPagina}/>
 
