@@ -30,12 +30,20 @@ const AndyPage = ({ data }) => {
       <Header PageTitle={data.datoCmsBioAndy.tituloDeLaPagina} />
 
       <section>
-        <div
-        class="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
-        dangerouslySetInnerHTML={{
-          __html: data.datoCmsBioAndy.bio
-        }}
-        />
+
+        <div className="sm:flex">
+          <div className="profile-pic">
+            <img src={data.datoCmsBioAndy.picture.fluid.src} alt={data.datoCmsBioAndy.tituloDeLaPagina}
+            className="p-3 border border-grey-light mt-3" />
+          </div>
+
+          <div
+            class="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
+            dangerouslySetInnerHTML={{
+              __html: data.datoCmsBioAndy.bio
+            }}
+            />
+        </div>
 
       </section>
 
@@ -47,6 +55,11 @@ query Andy{
   datoCmsBioAndy{
    tituloDeLaPagina
    bio
+   picture{
+     fluid{
+       src
+     }
+   }
  }
  }`
 

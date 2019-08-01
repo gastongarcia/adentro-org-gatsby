@@ -45,13 +45,6 @@ const AndyPage = ({ data }) => {
           />
         </div>
 
-        <div
-        class="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
-        dangerouslySetInnerHTML={{
-          __html: data.datoCmsProfileAndy.bio
-        }}
-        />
-
       </section>
 
     </Layout>
