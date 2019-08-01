@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import {TiSocialFacebook,TiSocialInstagram} from "react-icons/ti"
 import { css } from "@emotion/core"
-import USA from "../images/united-states.svg"
+import ES from "../images/spain.svg"
 
 
 const StyledIcon = styled.a`
@@ -43,21 +43,21 @@ function Navbar({}) {
         >
           <div className="text-sm sm:flex mx-auto">
             <Link
-              to="/"
+              to="/home/"
               className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker mr-4 menuitem"
-            >Inicio</Link>
+            >Home</Link>
             <Link
-              to="/andrea-carranza/"
+              to="/andrea-carranza-bio/"
               className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline mr-4 menuitem"
             >Msc. Andrea Carranza E.</Link>
             <Link
-              to="/contacto/"
+              to="/contact/"
               className="no-underline block mt-4 mr-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline menuitem"
-            >Contacto</Link>
+            >Contact</Link>
             <Link
-              to="/home/"
-              className="no-underline block mt-4 pl-5 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker mr-5 menuitem english-flag"
-            >English</Link>
+              to="/"
+              className="no-underline block mt-4 pl-5 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker mr-5 menuitem spain-flag"
+            >Español</Link>
             <StyledIcon
               href="https://www.instagram.com/adentro.mindfulness/"
               target="_blank"
