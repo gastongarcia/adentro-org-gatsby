@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Adentro`,
@@ -8,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`,
+        apiToken: process.env.DATO_API_TOKEN,
         preview: false,
         disableLiveReload: false,
       },
@@ -17,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`,
+        apiToken: process.env.DATO_API_TOKEN,
       },
     },
     `gatsby-plugin-sharp`,

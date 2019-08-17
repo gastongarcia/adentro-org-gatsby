@@ -5,6 +5,7 @@ node_modules
 assets
 /assets
 yarn-error.log
+.env
 
 # Build directory
 /public
