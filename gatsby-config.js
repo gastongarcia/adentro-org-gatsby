@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
   siteMetadata: {
     title: `Adentro`,
@@ -9,20 +5,21 @@ module.exports = {
     author: `@GastonGarciaO`
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
+        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`,
         preview: false,
-        disableLiveReload: false,
-      },
+        disableLiveReload: false
+      }
     },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
-      },
+        apiToken: `743ccda79758cf9a8c4e43ea5f3f6a`
+      }
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -47,8 +44,8 @@ module.exports = {
         // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "adentro.org",
-      },
+        cookieDomain: "adentro.org"
+      }
     },
     `gatsby-plugin-styled-components`,
     {
@@ -57,10 +54,14 @@ module.exports = {
         fonts: [
           {
             family: `Asap`,
-            variants: [`400`,`700`],
+            variants: [`400`, `700`]
           },
-        ],
-      },
+          {
+            family: `Roboto`,
+            variants: [`300`, `400`, `700`]
+          }
+        ]
+      }
     },
     `gatsby-plugin-react-helmet`,
     {
@@ -80,7 +81,7 @@ module.exports = {
       resolve: "gatsby-plugin-purgecss",
       options: {
         tailwind: true,
-        purgeOnly: ["src/css/style.css", "src/css/global.css"]
+        purgeOnly: ["src/css/style.css"]
       }
     }
   ]
