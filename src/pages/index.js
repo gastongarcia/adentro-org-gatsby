@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
       <Header PageTitle={data.datoCmsInicio.tituloDeLaPagina} />
 
       <section className="decoration">
-        <div className="mx-auto border-grey-lightest border-b mt-2 sm:pt-2 sm:pb-5">
+        <div className="mx-auto border-grey-lightest border-b mt-0 sm:pt-2 sm:pb-5">
           <img
             src={data.datoCmsInicio.fotoDePagina.fluid.src}
             alt="Adentro"
