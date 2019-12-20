@@ -6,7 +6,7 @@ import AdentroLogo from "../images/logo.svg";
 function Header({ PageTitle }) {
   return (
     <header>
-      <div className="w-full mx-auto text-center px-6 py-3 md:py-12 border-b border-gray-300">
+      <div className="w-full mx-auto text-center px-6 py-3 md:py-12 ">
         <img
           src={AdentroLogo}
           alt="Adentro"

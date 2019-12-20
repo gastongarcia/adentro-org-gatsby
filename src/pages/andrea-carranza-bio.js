@@ -2,20 +2,19 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Header from "../components/header"
-import styled from "styled-components"
-import NavbarEn from "../components/navbar-en"
+import Header from "../components/header";
+import styled from "styled-components";
+import NavbarEn from "../components/navbar-en";
 
 const StyledLink = styled(Link)`
   color: #4a5568;
-  &:hover{
+  &:hover {
     color: #212529;
   }
-  &:visited{
+  &:visited {
     color: #212529;
   }
-`
-
+`;
 
 const AndyPage = ({ data }) => {
   return (
@@ -30,37 +29,38 @@ const AndyPage = ({ data }) => {
       <Header PageTitle={data.datoCmsProfileAndy.tituloDeLaPagina} />
 
       <section>
-
-        <div className="sm:flex">
-          <div className="profile-pic">
-            <img src={data.datoCmsProfileAndy.picture.fluid.src} alt={data.datoCmsProfileAndy.tituloDeLaPagina}
-            className="p-3 border border-grey-light mt-3" />
+        <div className="block md:flex">
+          <div className="w-full md:w-2/6">
+            <img
+              src={data.datoCmsProfileAndy.picture.fluid.src}
+              alt={data.datoCmsProfileAndy.tituloDeLaPagina}
+              className="p-3 pl-0 rounded mt-3"
+            />
           </div>
 
           <div
-            class="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
+            class="w-full md:w-4/6"
             dangerouslySetInnerHTML={{
-            __html: data.datoCmsProfileAndy.bio
+              __html: data.datoCmsProfileAndy.bio
             }}
           />
         </div>
-
       </section>
-
     </Layout>
   );
-}
+};
 export const query = graphql`
-query AndyBio {
-  datoCmsProfileAndy {
-    bio
-    tituloDeLaPagina
-    picture {
-      fluid {
-        src
+  query AndyBio {
+    datoCmsProfileAndy {
+      bio
+      tituloDeLaPagina
+      picture {
+        fluid {
+          src
+        }
       }
     }
   }
-}`
+`;
 
 export default AndyPage;

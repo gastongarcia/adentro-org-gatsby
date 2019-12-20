@@ -37,7 +37,6 @@ const AndyPage = ({ data }) => {
               className="p-3 pl-0 rounded mt-3"
             />
           </div>
-
           <div
             class="w-full md:w-4/6"
             dangerouslySetInnerHTML={{

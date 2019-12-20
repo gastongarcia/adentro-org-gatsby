@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Header from "../components/header";
 import styled from "styled-components";
 import Navbar from "../components/navbar";
+import Lotus from "../components/lotus";
 
 const StyledLink = styled(Link)`
   color: #4a5568;
@@ -29,7 +30,7 @@ const IndexPage = ({ data }) => {
       <Header PageTitle={data.datoCmsInicio.tituloDeLaPagina} />
 
       <section className="decoration">
-        <div className="mx-auto border-grey-lightest border-b mt-0 sm:pt-2 sm:pb-5">
+        <div className="mx-auto mt-0 sm:pt-2 sm:pb-2">
           <img
             src={data.datoCmsInicio.fotoDePagina.fluid.src}
             alt="Adentro"
@@ -37,6 +38,8 @@ const IndexPage = ({ data }) => {
           />
         </div>
       </section>
+
+      <Lotus />
 
       <section>
         <div
@@ -47,6 +50,8 @@ const IndexPage = ({ data }) => {
         />
       </section>
 
+      <Lotus />
+
       <section>
         <div
           className="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
@@ -55,6 +60,8 @@ const IndexPage = ({ data }) => {
           }}
         />
       </section>
+
+      <Lotus />
     </Layout>
   );
 };
