@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Header from "../components/header";
 import styled from "styled-components";
 import NavbarEn from "../components/navbar-en";
+import Lotus from "../components/lotus";
 
 const StyledLink = styled(Link)`
   color: #4a5568;
@@ -38,6 +39,8 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
 
+      <Lotus />
+
       <section>
         <div
           className="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto"
@@ -46,6 +49,8 @@ const IndexPage = ({ data }) => {
           }}
         />
       </section>
+
+      <Lotus />
 
       <section>
         <div
