@@ -31,18 +31,6 @@ const Eventos = ({ data }) => {
 
       <Header PageTitle={data.datoCmsEvento.tituloDeLaPagina} />
 
-      <section className="decoration">
-        <div className="mx-auto mt-0 sm:pt-2 sm:pb-2">
-          <img
-            src={data.datoCmsEvento.fotoDePagina.fluid.src}
-            alt="Adentro"
-            className="mx-auto pb-3 rounded"
-          />
-        </div>
-      </section>
-
-      <Lotus />
-
       <section>
         <div
           className="mx-auto"
