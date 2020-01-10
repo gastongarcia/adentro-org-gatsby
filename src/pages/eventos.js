@@ -50,6 +50,18 @@ const Eventos = ({ data }) => {
         />
       </section>
 
+      <section>
+        <div className="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto mt-5 text-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdmoldIWcdZp6z56QfeFTTbe5Pq1p5fteuw2dB2ySgph8jXDg/viewform"
+            target="_blank"
+            className="rounded-full bg-red-400 hover:bg-red-600 text-white mx-auto px-5 py-3"
+          >
+            Formulario de Registro
+          </a>
+        </div>
+      </section>
+
       <Lotus />
 
       <section>
