@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
 
       <section>
         <div
-          className="mx-auto"
+          className="mx-auto max-w-xl md:max-w-3xl lg:max-w-4xl"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsInicio.descripcionDeAdentro
           }}
