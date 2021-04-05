@@ -49,18 +49,11 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: `Asap`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Roboto`,
-            variants: [`300`, `400`, `700`]
-          }
-        ]
+        google: {
+          families: ["Asap", "Roboto"]
+        }
       }
     },
     `gatsby-plugin-react-helmet`,

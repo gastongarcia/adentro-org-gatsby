@@ -26,7 +26,7 @@ function Layout({ children }) {
               content="RWebUIX0OsNyAbiMrIkz5gSMvFU2kxhOGiEjn1oRzcs"
             />
           </Helmet>
-          <div className="flex flex-col flex-1 md:justify-center w-full md:w-3/5 mx-auto px-4 py-8 md:p-8">
+          <div className="flex flex-col flex-1 md:justify-center w-full md:w-10/12 mx-auto px-4 py-8 md:p-8">
             {children}
           </div>
 

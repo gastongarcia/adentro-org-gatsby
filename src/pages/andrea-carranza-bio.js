@@ -1,20 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Header from "../components/header";
-import styled from "styled-components";
 import NavbarEn from "../components/navbar-en";
-
-const StyledLink = styled(Link)`
-  color: #4a5568;
-  &:hover {
-    color: #212529;
-  }
-  &:visited {
-    color: #212529;
-  }
-`;
 
 const AndyPage = ({ data }) => {
   return (
@@ -34,7 +23,7 @@ const AndyPage = ({ data }) => {
             <img
               src={data.datoCmsProfileAndy.picture.fluid.src}
               alt={data.datoCmsProfileAndy.tituloDeLaPagina}
-              className="p-3 pl-0 rounded mt-3"
+              className="p-5 pl-0 rounded mt-3"
             />
           </div>
 

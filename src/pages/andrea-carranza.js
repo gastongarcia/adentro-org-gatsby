@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Header from "../components/header";
@@ -34,7 +34,7 @@ const AndyPage = ({ data }) => {
             <img
               src={data.datoCmsBioAndy.picture.fluid.src}
               alt={data.datoCmsBioAndy.tituloDeLaPagina}
-              className="p-3 pl-0 rounded mt-3"
+              className="p-5 pl-0 rounded mt-3"
             />
           </div>
           <div
