@@ -56,7 +56,6 @@ export const query = graphql`
     datoCmsEvento {
       tituloDeLaPagina
       descripcionDelEvento
-      registroYDetalles
       fotoDePagina {
         fluid {
           src
