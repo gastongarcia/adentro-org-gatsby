@@ -30,23 +30,6 @@ const Eventos = ({ data }) => {
       </section>
 
       <Lotus />
-
-      <section>
-        <div className="max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto">
-          <p className="text-sm">En conjunto con:</p>
-          <img
-            src={Mexico}
-            alt="Instituto Mexicano de Mindfulness"
-            style={{ maxWidth: "200px", border: "3px solid white" }}
-          />
-          <p className="text-sm">A beneficio de:</p>
-          <img
-            src={Asc}
-            alt="Asociación Sueña en Colores"
-            style={{ maxWidth: "200px", border: "3px solid white" }}
-          />
-        </div>
-      </section>
     </Layout>
   );
 };
