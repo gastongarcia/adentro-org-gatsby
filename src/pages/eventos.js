@@ -29,6 +29,15 @@ const Eventos = ({ data }) => {
         </div>
       </section>
 
+      <section>
+        <div
+          className="max-w-xl md:max-w-3xl lg:max-w-4xl lg:mt-5 mx-auto"
+          dangerouslySetInnerHTML={{
+            __html: data.datoCmsEvento.descripcionDelEvento
+          }}
+        />
+      </section>
+
       <Lotus />
     </Layout>
   );
