@@ -56,6 +56,13 @@ function Navbar({}) {
             Msc. Andrea Carranza E.
           </Link>
           <Link
+            to="/begona-garcia-bio/"
+            className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline mr-4 menuitem"
+            activeStyle={{ textDecoration: "underline" }}
+          >
+            Begoña García
+          </Link>
+          <Link
             to="/contact/"
             className="no-underline block mt-4 mr-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline menuitem"
             activeStyle={{ textDecoration: "underline" }}
