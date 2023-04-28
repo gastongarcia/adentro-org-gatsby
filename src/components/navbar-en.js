@@ -60,7 +60,7 @@ function Navbar({}) {
             className="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-teal-darker hover:underline mr-4 menuitem"
             activeStyle={{ textDecoration: "underline" }}
           >
-            Begoña García
+            Lic. Begoña García O.
           </Link>
           <Link
             to="/contact/"
